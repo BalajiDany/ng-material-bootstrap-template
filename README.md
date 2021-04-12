@@ -44,7 +44,7 @@ List of majour libraries used in the template
 
 - Production Build  
   - Build Optimizer
-  - JSON Status for Bundle analyzer
+  - JSON Stats for Bundle analyzer
 - Diffrential Loading
   - Refer : [Differential builds](https://angular.io/guide/deployment#differential-loading)
 
