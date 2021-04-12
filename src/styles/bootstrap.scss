@@ -1,0 +1,84 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$spacer: 1rem !default;
+$spacers: (
+    0: 0,
+    1: $spacer / 4,
+    2: $spacer / 2,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+) !default;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/mixins";
+
+// 4. Only use the utilities we need
+$utilities: map-get-multiple(
+    $utilities,
+    (
+        "display",
+        "order",
+        "flex",
+        "flex-direction",
+        "flex-grow",
+        "flex-shrink",
+        "flex-wrap",
+        "justify-content",
+        "align-items",
+        "align-content",
+        "align-self",
+        "margin",
+        "margin-x",
+        "margin-y",
+        "margin-top",
+        "margin-end",
+        "margin-bottom",
+        "margin-start",
+        "negative-margin",
+        "negative-margin-x",
+        "negative-margin-y",
+        "negative-margin-top",
+        "negative-margin-end",
+        "negative-margin-bottom",
+        "negative-margin-start",
+        "padding",
+        "padding-x",
+        "padding-y",
+        "padding-top",
+        "padding-end",
+        "padding-bottom",
+        "padding-start",
+        "position",
+        "overflow",
+        "text-align",
+        "top",
+        "end",
+        "start",
+        "bottom",
+        "float",
+        "width",
+        "height"
+    )
+);
+
+// Additional Properties.
+$utilities: map-merge(
+    $utilities,
+    (
+        "z-index": (
+            property: z-index,
+            class: z,
+            values: 0 100 200 400 800 1000,
+        ),
+    )
+);
+
+// 5. Include any optional Bootstrap components as you like
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/utilities/api";

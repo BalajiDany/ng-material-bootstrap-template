@@ -9,7 +9,6 @@
 Confused about choosing between angular material UI or Bootstrap? <br>
 Why can't we use both? :thinking:
 
-<hr>
 
 ## Angular Material UI + Bootstrap
 
@@ -27,7 +26,6 @@ In the conflict of bootstrap VS material, we understand that both have several i
 For more refer : 
 [Slide Deck](https://speakerdeck.com/ahasall/angular-material-or-bootstrap-stop-asking-the-question-at-ng-de-2019) | [youtube](https://www.youtube.com/watch?v=6MgOHuxz2Ow)
 
-<hr>
 
 ## Build With
 
@@ -38,7 +36,6 @@ List of majour libraries used in the template
 - [RxJs](https://rxjs-dev.firebaseapp.com)
 - [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) (dev)
 
-<hr>
 
 ## Current Features
 
@@ -48,7 +45,6 @@ List of majour libraries used in the template
 - Diffrential Loading
   - Refer : [Differential builds](https://angular.io/guide/deployment#differential-loading)
 
-<hr>
 
 ## Contributing
 
@@ -60,16 +56,12 @@ Contributions are what make the open-source community such an amazing place to l
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<hr>
 
 ## Acknowledgements
+
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Pages](https://pages.github.com)
-
-<hr>
-
-##
 
 [Back To Top](#ng-material-bootstrap-template)
