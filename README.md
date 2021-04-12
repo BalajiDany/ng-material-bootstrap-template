@@ -48,6 +48,8 @@ List of majour libraries used in the template
 - Diffrential Loading
   - Refer : [Differential builds](https://angular.io/guide/deployment#differential-loading)
 
+<hr>
+
 ## Contributing
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
