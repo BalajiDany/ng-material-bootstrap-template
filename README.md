@@ -57,6 +57,10 @@ Contributions are what make the open-source community such an amazing place to l
 5. Open a Pull Request
 
 
+## License
+
+Apache-2.0 License - Please have a look at the [LICENSE](LICENSE) for more details.
+
 ## Acknowledgements
 
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
