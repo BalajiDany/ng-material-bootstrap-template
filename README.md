@@ -34,7 +34,8 @@ List of majour libraries used in the template
 - [Angular](https://angular.io)
 - [Angular Material UI Components and CDK](https://material.angular.io)
 - [RxJs](https://rxjs-dev.firebaseapp.com)
-- [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) (dev)
+- ~~[Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer)~~ (~~dev~~)
+- [Source Map Explorer](https://github.com/danvk/source-map-explorer) (npx)
 
 
 ## Current Features
@@ -44,6 +45,13 @@ List of majour libraries used in the template
   - JSON Stats for Bundle analyzer
 - Diffrential Loading
   - Refer : [Differential builds](https://angular.io/guide/deployment#differential-loading)
+- Bootstrap
+  - [Grid](https://getbootstrap.com/docs/5.0/layout/grid/) - mobile-first flexbox grid
+  - [Container](https://getbootstrap.com/docs/5.0/layout/containers/) - fundamental building block
+  - [Utilities](https://getbootstrap.com/docs/5.0/utilities) - utility classes
+- Angular
+  - [Material Theme](https://material.angular.io/guide/theming) - Default : [Deep Purple & Amber](src/styles/theming.scss)
+  - [Typography](https://material.angular.io/guide/typography) - Default : [Roboto, "Helvetica Neue", sans-serif](src/styles/typography.scss)
 
 
 ## Contributing
