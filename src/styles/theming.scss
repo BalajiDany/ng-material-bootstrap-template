@@ -1,0 +1,27 @@
+@import "@angular/material/theming";
+
+// Default Theme
+// Light DeepPurple Amber
+$light-deeppurple-amber: mat-light-theme(
+    (
+        color: (
+            primary: mat-palette($mat-deep-purple),
+            accent: mat-palette($mat-amber, A200, A100, A400),
+        ),
+    ),
+);
+@include angular-material-theme($light-deeppurple-amber);
+
+// Other Themes
+// Dark Pink BlueGrey
+$dark-pink-bluegrey: mat-dark-theme(
+    (
+        color: (
+            primary: mat-palette($mat-pink),
+            accent: mat-palette($mat-blue-grey, A200, A100, A400)
+        )
+    )
+);
+.dark-pink-blurgrey {
+    @include angular-material-color($dark-pink-bluegrey);
+}
