@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TRANSLOCO_SCOPE, TranslocoModule } from '@ngneat/transloco';
 
 import { ErrorsComponent } from './errors.component';
 import { ErrorsRoutingModule } from './errors-routing.module';
@@ -18,7 +19,11 @@ import { ServerErrorComponent } from './pages/server-error/server-error.componen
     ],
     imports: [
         CommonModule,
+        TranslocoModule,
         ErrorsRoutingModule
+    ],
+    providers: [
+        { provide: TRANSLOCO_SCOPE, useValue: 'errors' }
     ]
 })
 export class ErrorsModule { }

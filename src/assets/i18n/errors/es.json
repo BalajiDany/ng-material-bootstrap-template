@@ -1,0 +1,19 @@
+{
+    "errorCodeLabel": "Código de error: {{errorCode}}",
+    "accessDenied": {
+        "errorMessage": "Acceso denegado.",
+        "errorDescription": "No tiene permiso, comuníquese con el administrador"
+    },
+    "pageNotFound": {
+        "errorMessage": "Página no encontrada",
+        "errorDescription": "No podemos encontrar la página que está buscando"
+    },
+    "serverDown": {
+        "errorMessage": "Servidor Inactivo por mantenimiento.",
+        "errorDescription": "Lamentamos las molestias. Inténtelo de nuevo más tarde."
+    },
+    "serverError": {
+        "errorMessage": "Vaya, algo salió mal.",
+        "errorDescription": "Intente actualizar esta página o comuníquese con el administrador si el problema persiste. "
+    }
+}

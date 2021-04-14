@@ -1,0 +1,19 @@
+{
+    "errorCodeLabel": "Error Code: {{errorCode}}",
+    "accessDenied": {
+        "errorMessage": "Access Denied.",
+        "errorDescription": "You don't have permission, Please contact Admin."
+    },
+    "pageNotFound": {
+        "errorMessage": "Page Not Found.",
+        "errorDescription": "We can't find the page you are looking for."
+    },
+    "serverDown": {
+        "errorMessage": "Server Down for Maintenance.",
+        "errorDescription": "We apologize for any inconvenience, Please try againg later."
+    },
+    "serverError": {
+        "errorMessage": "Oops, Something went Wrong.",
+        "errorDescription": "Try to refresh this page or Contact Admin if problem persists. "
+    }
+}

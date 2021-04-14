@@ -1,1 +1,5 @@
-<p>server-error works!</p>
+<ng-container *transloco="let t;">
+    <p>{{ t('errors.errorCodeLabel', { errorCode: 500 }) }}</p>
+    <h1>{{ t('errors.serverError.errorMessage') }}</h1>
+    <h3>{{ t('errors.serverError.errorDescription') }}</h3>
+</ng-container>

@@ -1,1 +1,5 @@
-<p>server-down works!</p>
+<ng-container *transloco="let t;">
+    <p>{{ t('errors.errorCodeLabel', { errorCode: 503 }) }}</p>
+    <h1>{{ t('errors.serverDown.errorMessage') }}</h1>
+    <h3>{{ t('errors.serverDown.errorDescription') }}</h3>
+</ng-container>

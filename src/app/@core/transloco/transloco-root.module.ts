@@ -3,6 +3,10 @@ import { TRANSLOCO_LOADER, TRANSLOCO_CONFIG, translocoConfig, TranslocoModule } 
 import { environment } from 'src/environments/environment';
 import { TranslocoHttpLoaderService } from './transloco-http-loader.service';
 
+const availableLangs = [
+    { id: 'en', label: 'English' },
+    { id: 'es', label: 'Español' },
+]
 
 @NgModule({
     exports: [
@@ -12,7 +16,7 @@ import { TranslocoHttpLoaderService } from './transloco-http-loader.service';
         {
             provide: TRANSLOCO_CONFIG,
             useValue: translocoConfig({
-                availableLangs: ['en', 'es'],
+                availableLangs,
                 defaultLang: 'en',
                 // Remove this option if your application doesn't support changing language in runtime.
                 reRenderOnLangChange: true,

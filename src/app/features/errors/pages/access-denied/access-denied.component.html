@@ -1,1 +1,5 @@
-<p>access-denied works!</p>
+<ng-container *transloco="let t;">
+    <p>{{ t('errors.errorCodeLabel', { errorCode: 403 }) }}</p>
+    <h1>{{ t('errors.accessDenied.errorMessage') }}</h1>
+    <h3>{{ t('errors.accessDenied.errorDescription') }}</h3>
+</ng-container>

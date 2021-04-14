@@ -1,1 +1,5 @@
-<p>page-not-found works!</p>
+<ng-container *transloco="let t;">
+    <p>{{ t('errors.errorCodeLabel', { errorCode: 404 }) }}</p>
+    <h1>{{ t('errors.pageNotFound.errorMessage') }}</h1>
+    <h3>{{ t('errors.pageNotFound.errorDescription') }}</h3>
+</ng-container>
