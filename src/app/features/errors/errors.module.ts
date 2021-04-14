@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { ErrorsComponent } from './errors.component';
 import { ErrorsRoutingModule } from './errors-routing.module';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { AccessDeniedComponent } from './pages/access-denied/access-denied.component';
@@ -9,6 +10,7 @@ import { ServerErrorComponent } from './pages/server-error/server-error.componen
 
 @NgModule({
     declarations: [
+        ErrorsComponent,
         PageNotFoundComponent,
         AccessDeniedComponent,
         ServerDownComponent,
