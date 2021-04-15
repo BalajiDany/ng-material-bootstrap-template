@@ -1,4 +1,5 @@
 @import "@angular/material/theming";
+@import "../app/app.component";
 
 // To Override default Typography
 $custom-typography: mat-typography-config(
@@ -20,3 +21,4 @@ $custom-typography: mat-typography-config(
 );
 
 @include mat-core($custom-typography);
+@include app-theme-typography($custom-typography);

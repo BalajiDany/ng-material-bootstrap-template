@@ -1,4 +1,5 @@
 @import "@angular/material/theming";
+@import "../app/app.component";
 
 // Default Theme
 // Light DeepPurple Amber
@@ -11,6 +12,7 @@ $light-deeppurple-amber: mat-light-theme(
     ),
 );
 @include angular-material-theme($light-deeppurple-amber);
+@include app-theme-color($light-deeppurple-amber);
 
 // Other Themes
 // Dark Pink BlueGrey
@@ -24,4 +26,5 @@ $dark-pink-bluegrey: mat-dark-theme(
 );
 .dark-pink-blurgrey {
     @include angular-material-color($dark-pink-bluegrey);
+    @include app-theme-color($dark-pink-bluegrey);
 }

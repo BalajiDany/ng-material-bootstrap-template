@@ -1,0 +1,13 @@
+@import "./features/errors/errors.component.scss";
+
+@mixin app-theme-color($color) {
+    @if $color != null {
+        @include feature-errors-color($color);
+    }
+}
+
+@mixin app-theme-typography($typography) {
+    @if $typography != null {
+        @include feature-errors-typography($typography);
+    }
+}
