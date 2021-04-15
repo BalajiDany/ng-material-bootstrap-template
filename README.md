@@ -41,9 +41,10 @@ List of majour libraries used in the template
 
 ## Current Features
 
-- Production Build  
-  - Build Optimizer
-  - JSON Stats for Bundle analyzer
+- Production Build
+  - Build Optimizer : `npm run pack`
+  - Source Map Explorer : `npm run analyze`
+  - Refer : [package.json](package.json)
 - Diffrential Loading
   - Refer : [Differential builds](https://angular.io/guide/deployment#differential-loading)
 - Internationalization
