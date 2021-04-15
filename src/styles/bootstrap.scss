@@ -80,5 +80,6 @@ $utilities: map-merge(
 
 // 5. Include any optional Bootstrap components as you like
 @import "bootstrap/scss/grid";
+@import "bootstrap/scss/reboot";
 @import "bootstrap/scss/containers";
 @import "bootstrap/scss/utilities/api";

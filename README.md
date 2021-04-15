@@ -55,6 +55,7 @@ List of majour libraries used in the template
   - [Grid](https://getbootstrap.com/docs/5.0/layout/grid/) - mobile-first flexbox grid
   - [Container](https://getbootstrap.com/docs/5.0/layout/containers/) - fundamental building block
   - [Utilities](https://getbootstrap.com/docs/5.0/utilities) - utility classes
+  - [Reboot](https://getbootstrap.com/docs/5.0/content/reboot/) - Simple Base Line
 - Angular
   - [Material Theme](https://material.angular.io/guide/theming) - Default : [Deep Purple & Amber](src/styles/theming.scss)
   - [Typography](https://material.angular.io/guide/typography) - Default : [Roboto, "Helvetica Neue", sans-serif](src/styles/typography.scss)
