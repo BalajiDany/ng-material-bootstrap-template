@@ -51,6 +51,7 @@ List of majour libraries used in the template
   - [Transloco](https://ngneat.github.io/transloco/) - (i18n) library for Angular
   - Default Configuration : [transloco-root.module](src/app/@core/transloco/transloco-root.module.ts)
   - Locales : [i18n](src/assets/i18n)
+  - Except EN Locale, others are translated using [Filtrate](https://file-translate.com/en/app/json-translate)
 - Bootstrap
   - [Grid](https://getbootstrap.com/docs/5.0/layout/grid/) - mobile-first flexbox grid
   - [Container](https://getbootstrap.com/docs/5.0/layout/containers/) - fundamental building block
@@ -82,5 +83,6 @@ Apache-2.0 License - Please have a look at the [LICENSE](LICENSE) for more detai
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Pages](https://pages.github.com)
+* [Filtrate](https://file-translate.com/en/app/json-translate)
 
 [Back To Top](#ng-material-bootstrap-template)
