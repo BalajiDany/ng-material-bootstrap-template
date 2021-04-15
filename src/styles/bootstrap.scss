@@ -5,11 +5,18 @@
 $spacer: 1rem !default;
 $spacers: (
     0: 0,
-    1: $spacer / 4,
-    2: $spacer / 2,
-    3: $spacer,
-    4: $spacer * 1.5,
-    5: $spacer * 3,
+    1: $spacer * (1 / 4),
+    2: $spacer * (2 / 4),
+    3: $spacer * (3 / 4),
+    4: $spacer,
+    5: $spacer * (5 / 4),
+    6: $spacer * (6 / 4),
+    7: $spacer * (7 / 4),
+    8: $spacer * (8 / 4),
+    9: $spacer * (9 / 4),
+    10: $spacer * (10 / 4),
+    11: $spacer * (11 / 4),
+    12: $spacer * (12 / 4),
 ) !default;
 
 // 3. Include remainder of required Bootstrap stylesheets
