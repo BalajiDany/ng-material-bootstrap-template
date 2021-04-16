@@ -1,4 +1,4 @@
-import { Injectable, LOCALE_ID } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslocoService } from '@ngneat/transloco';
 

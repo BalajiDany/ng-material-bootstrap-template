@@ -10,7 +10,7 @@
     },
     "serverDown": {
         "errorMessage": "Server Down for Maintenance.",
-        "errorDescription": "We apologize for any inconvenience, Please try againg later."
+        "errorDescription": "We apologize for any inconvenience, Please try again later."
     },
     "serverError": {
         "errorMessage": "Oops, Something went Wrong.",
