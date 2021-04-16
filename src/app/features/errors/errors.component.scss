@@ -1,5 +1,12 @@
 @mixin feature-errors-color($color) {
-
+    $is-dark: map-get($map: $color, $key: is-dark);
+    svg.error-illustration {
+        @if $is-dark {
+            fill: mat-color($mat-blue-grey, 300);
+        } @else {
+            fill: mat-color($mat-blue-grey, 500);
+        }
+    }
 }
 
 @mixin feature-errors-typography($typography) {

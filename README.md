@@ -37,6 +37,7 @@ List of majour libraries used in the template
 - ~~[Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer)~~ (~~dev~~)
 - [Source Map Explorer](https://github.com/danvk/source-map-explorer) (npx)
 - [Transloco](https://ngneat.github.io/transloco/)
+- [unDraw](https://undraw.co)
 
 
 ## Current Features
@@ -60,6 +61,13 @@ List of majour libraries used in the template
 - Angular
   - [Material Theme](https://material.angular.io/guide/theming) - Default : [Deep Purple & Amber](src/styles/theming.scss)
   - [Typography](https://material.angular.io/guide/typography) - Default : [Roboto, "Helvetica Neue", sans-serif](src/styles/typography.scss)
+- Error Pages
+  - Added with Illustrations using [unDraw](https://undraw.co)
+  - Endpoints
+    - `error/500` - Server Error
+    - `error/503` - Server Down
+    - `error/403` - Access Denied
+    - `error/404` or `any url, not resolved by router` - Page Not Found
 
 
 ## Contributing
@@ -84,5 +92,6 @@ Apache-2.0 License - Please have a look at the [LICENSE](LICENSE) for more detai
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Pages](https://pages.github.com)
 * [Filtrate](https://file-translate.com/en/app/json-translate)
+* [unDraw](https://undraw.co)
 
 [Back To Top](#ng-material-bootstrap-template)
