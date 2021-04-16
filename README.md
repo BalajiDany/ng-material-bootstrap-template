@@ -68,6 +68,10 @@ List of majour libraries used in the template
     - `error/503` - Server Down
     - `error/403` - Access Denied
     - `error/404` or `any url, not resolved by router` - Page Not Found
+- Services
+  - [Locale Manager](./src/app/@core/services/locale-manager.service.ts)
+    - Stores the selected language in LocalStorage.
+    - Language can also be changed via URL Query Param  (For English : `hreflang=en`)
 
 
 ## Contributing
