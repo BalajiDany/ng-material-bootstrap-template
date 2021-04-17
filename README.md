@@ -72,6 +72,10 @@ List of majour libraries used in the template
   - [Locale Manager](./src/app/@core/services/locale-manager.service.ts)
     - Stores the selected language in LocalStorage.
     - Language can also be changed via URL Query Param  (For English : `hreflang=en`)
+  - [Theme Manager](./src/app/@core/services/theme-manager.service.ts)
+    - Stores the selected theme in LocalStorage.
+    - Theme can also be changed via URL Query Param (For Dark Pink BlueGrey : `hreftheme=dark-pink-bluegrey`)
+    - For default : `hreftheme=default`
 
 
 ## Contributing
