@@ -50,7 +50,7 @@ export class ThemeManagerService {
     private isSupportedTheme(theme: string | null): boolean {
         if (!theme) return false;
 
-       return !!availableThemes
+        return !!availableThemes
             .find(({ id }) => id === theme);
     }
 
