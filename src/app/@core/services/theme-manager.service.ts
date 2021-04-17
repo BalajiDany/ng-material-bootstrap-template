@@ -50,11 +50,8 @@ export class ThemeManagerService {
     private isSupportedTheme(theme: string | null): boolean {
         if (!theme) return false;
 
-        const selectedTheme = availableThemes
-            .map(({ id }) => id)
-            .find(themeId => themeId === theme);
-
-        return !!selectedTheme;
+       return !!availableThemes
+            .find(({ id }) => id === theme);
     }
 
     private changeTheme(theme: string): void {

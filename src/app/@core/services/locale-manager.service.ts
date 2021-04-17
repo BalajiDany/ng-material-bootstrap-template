@@ -1,4 +1,5 @@
-import { Injectable } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Inject, Injectable } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslocoService } from '@ngneat/transloco';
 
@@ -15,6 +16,7 @@ export class LocaleManagerService {
     constructor(
         private route: ActivatedRoute,
         private translocoService: TranslocoService,
+        @Inject(DOCUMENT) private document: Document,
     ) {
         this.restoreLanguage();
         this.route.queryParamMap
@@ -32,7 +34,7 @@ export class LocaleManagerService {
         return this.translocoService.getActiveLang();
     }
 
-    public setActiveLanguage(lang: string) {
+    public setActiveLanguage(lang: string): void {
         const isSupported = this.isSupportedLanguage(lang);
 
         if (!isSupported) {
@@ -47,26 +49,32 @@ export class LocaleManagerService {
         this.changeLanguage(lang);
     }
 
-    private isSupportedLanguage(lang: string | null) {
+    private isSupportedLanguage(lang: string | null): boolean {
         if (!lang) return false;
 
         const supportedLanguage: [] = this.getSupportedLanguage();
-        const selectedLanguage = supportedLanguage
-            .map(({ id }) => id)
-            .find(langId => langId === lang);
-
-        return !!selectedLanguage;
+        return !!supportedLanguage
+            .find(({ id }) => id === lang);
     }
 
     private changeLanguage(lang: string): void {
+        this.persistLang(lang);
+        this.reflectLang(lang);
+    }
+
+    private persistLang(lang: string): void {
         localStorage.setItem(LocaleManagerService.LOCAL_STORAGE_KEY, lang);
+    }
+
+    private reflectLang(lang: string): void {
+        this.document.documentElement.lang = lang;
         this.translocoService.setActiveLang(lang);
     }
 
     private restoreLanguage(): void {
         const lang = localStorage.getItem(LocaleManagerService.LOCAL_STORAGE_KEY);
         const isSupported = this.isSupportedLanguage(lang);
-        if (isSupported) this.translocoService.setActiveLang(`${lang}`);
+        if (isSupported) this.reflectLang(`${lang}`);
     }
 
 }
