@@ -76,6 +76,9 @@ List of majour libraries used in the template
     - Stores the selected theme in LocalStorage.
     - Theme can also be changed via URL Query Param (For Dark Pink BlueGrey : `hreftheme=dark-pink-bluegrey`)
     - For default : `hreftheme=default`
+  - [SEO Manager](./src/app/@core/services/seo-manager.service.ts)
+    - Allows us to set the **title** and **description**
+    - Initialy it uses `appName` and `appDescription` from `assets/i18n/*.json` as **title** and **description**
 
 
 ## Contributing

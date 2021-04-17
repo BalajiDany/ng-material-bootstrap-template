@@ -1,3 +1,4 @@
 {
-    "greetings": "Hello"
+    "appName": "Angular Template",
+    "appDescription": "An Starter template uses both Angualr Material and Bootstrap Utilities"
 }

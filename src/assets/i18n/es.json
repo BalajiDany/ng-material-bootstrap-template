@@ -1,3 +1,4 @@
 {
-    "greetings": "Hola"
+    "appName": "Angualr Template",
+    "appDescription": "Una plantilla de inicio utiliza tanto el material de Angualr como las utilidades de Bootstrap"
 }
