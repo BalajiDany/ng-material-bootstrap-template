@@ -81,6 +81,11 @@ List of majour libraries used in the template
     - Initialy it uses `appName` and `appDescription` from `assets/i18n/*.json` as **title** and **description**
         - Title format will be `${pageName} | ${appName}` 
         - Refer : [seo-manage.service.ts](./src/app/@core/services/seo-manager.service.ts)
+- Entry Pages
+  - Blank Pages (Under Development)
+  - EndPoints
+    - `entry/login` - Login Page
+    - `entry/register` - Registration page
 
 
 ## Contributing
