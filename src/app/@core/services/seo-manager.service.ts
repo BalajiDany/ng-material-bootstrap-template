@@ -28,9 +28,9 @@ export class SeoManagerService {
             );
     }
 
-    public setTitle(page: string): void {
-        if (!!page) this.reflectTitle(this.appName);
-        else this.reflectTitle(`${page} | ${this.appName}`);
+    public setTitle(pageName: string): void {
+        if (!pageName) this.reflectTitle(this.appName);
+        else this.reflectTitle(`${pageName} | ${this.appName}`);
     }
 
     public setDescription(content: string): void {

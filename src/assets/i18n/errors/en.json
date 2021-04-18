@@ -1,5 +1,6 @@
 {
     "errorCodeLabel": "Error Code: {{errorCode}}",
+    "errorPageTitle": "Error : {{errorCode}}",
     "accessDenied": {
         "errorMessage": "Access Denied.",
         "errorDescription": "You don't have permission, Please contact Admin."
