@@ -79,6 +79,8 @@ List of majour libraries used in the template
   - [SEO Manager](./src/app/@core/services/seo-manager.service.ts)
     - Allows us to set the **title** and **description**
     - Initialy it uses `appName` and `appDescription` from `assets/i18n/*.json` as **title** and **description**
+        - Title format will be `${pageName} | ${appName}` 
+        - Refer : [seo-manage.service.ts](./src/app/@core/services/seo-manager.service.ts)
 
 
 ## Contributing
