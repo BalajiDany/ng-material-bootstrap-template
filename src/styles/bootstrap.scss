@@ -18,6 +18,7 @@ $spacers: (
     11: $spacer * (11 / 4),
     12: $spacer * (12 / 4),
 ) !default;
+$enable-negative-margins: true !default;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "bootstrap/scss/variables";
@@ -80,7 +81,21 @@ $utilities: map-merge(
         "z-index": (
             property: z-index,
             class: z,
+            responsive: true,
             values: 0 100 200 400 800 1000,
+        ),
+        "border-radius": (
+            property: border-radius,
+            class: br,
+            responsive: true,
+            values: (
+                0: 4px * 0,
+                1: 4px * 1,
+                2: 4px * 2,
+                3: 4px * 3,
+                4: 4px * 4,
+                5: 4px * 5,
+            ),
         ),
     )
 );
