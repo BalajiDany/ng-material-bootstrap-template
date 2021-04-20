@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { EntryComponent } from './entry.component';
-import { LoginComponent } from './pages/login/login.component';
-import { RegisterComponent } from './pages/register/register.component';
+import { SigninComponent } from './pages/signin/signin.component';
+import { SignupComponent } from './pages/signup/signup.component';
 
 const routes: Routes = [
     {
@@ -10,17 +10,17 @@ const routes: Routes = [
         component: EntryComponent,
         children: [
             {
-                path: 'login',
+                path: 'signin',
                 pathMatch: 'full',
-                component: LoginComponent,
+                component: SigninComponent,
             },
             {
-                path: 'register',
+                path: 'signup',
                 pathMatch: 'full',
-                component: RegisterComponent,
-            }
+                component: SignupComponent,
+            },
         ]
-    }
+    },
 ];
 
 @NgModule({

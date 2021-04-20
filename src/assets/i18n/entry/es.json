@@ -1,1 +1,13 @@
-{}
+{
+    "welcomeLabel": "Bienvenido a {{appName}}",
+    "welcomeDescription": "Una plantilla de inicio utiliza tanto Angualr Material como Bootstrap Utilities",
+    "aboutIllustrator": "Padre jugando con su hija",
+    "signInLabel": "Iniciar sesión",
+    "signUpLabel": "Registrarse",
+    "emailAddressLabel": "Dirección de correo electrónico",
+    "emailAddressPlaceholder": "angualrTemplate@boot.co",
+    "passwordLabel": "Contraseña",
+    "forgotPasswordLabel": "Olvidaste tu contraseña?",
+    "orSignInUsingLabel": "O {{entry.signInLabel}} usando",
+    "dontHaveAccountLabel": "Aún no tienes una cuenta?"
+}

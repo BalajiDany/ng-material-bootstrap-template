@@ -38,6 +38,7 @@ List of majour libraries used in the template
 - [Source Map Explorer](https://github.com/danvk/source-map-explorer) (npx)
 - [Transloco](https://ngneat.github.io/transloco/)
 - [unDraw](https://undraw.co)
+- [Angular Material Icon](https://fonts.google.com/icons)
 
 
 ## Current Features
@@ -57,7 +58,7 @@ List of majour libraries used in the template
   - [Grid](https://getbootstrap.com/docs/5.0/layout/grid/) - mobile-first flexbox grid
   - [Container](https://getbootstrap.com/docs/5.0/layout/containers/) - fundamental building block
   - [Utilities](https://getbootstrap.com/docs/5.0/utilities) - utility classes
-  - [Reboot](https://getbootstrap.com/docs/5.0/content/reboot/) - Simple Base Line
+  - [Reboot](https://getbootstrap.com/docs/5.0/content/reboot/) - ~~Simple Base Line~~  - Manually Forked (Some style affects Angular Material Components)
 - Angular
   - [Material Theme](https://material.angular.io/guide/theming) - Default : [Deep Purple & Amber](src/styles/theming.scss)
   - [Typography](https://material.angular.io/guide/typography) - Default : [Roboto, "Helvetica Neue", sans-serif](src/styles/typography.scss)

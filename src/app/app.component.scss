@@ -1,13 +1,18 @@
+@import "./features/entry/entry.component.scss";
 @import "./features/errors/errors.component.scss";
 
-@mixin app-theme-color($color) {
+@mixin app-theme-color($config) {
+    $color: mat-get-color-config($config);
     @if $color != null {
+        @include feature-entry-color($color);
         @include feature-errors-color($color);
     }
 }
 
-@mixin app-theme-typography($typography) {
+@mixin app-theme-typography($config) {
+    $typography: mat-get-typography-config($config);
     @if $typography != null {
+        @include feature-entry-typography($typography);
         @include feature-errors-typography($typography);
     }
 }

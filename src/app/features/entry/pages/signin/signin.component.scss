@@ -1,0 +1,29 @@
+@mixin pages-signin-color($color) {
+
+    $primary: map-get($map: $color, $key: primary);
+    $is-dark: map-get($map: $color, $key: is-dark);
+    $background: map-get($map: $color, $key: background);
+
+    div.card-bg-primary {
+        background-color: mat-color($primary);
+        color: mat-contrast($primary, 600);
+    }
+
+    div, button{
+        .card-bg-background {
+            background-color: map-get($map: $background, $key: background);
+        }
+    }
+
+    svg {
+        @if $is-dark {
+            fill: mat-color($mat-blue-grey, 300);
+        } @else {
+            fill: mat-color($mat-blue-grey, 500);
+        }
+    }
+}
+
+@mixin pages-signin-typography($typography) {
+
+}

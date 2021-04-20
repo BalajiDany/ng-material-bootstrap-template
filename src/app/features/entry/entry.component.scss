@@ -1,0 +1,11 @@
+@import './pages/signin/signin.component.scss';
+
+@mixin feature-entry-color($color) {
+    @if $color != null {
+        @include pages-signin-color($color);
+    }
+}
+
+@mixin feature-entry-typography($typography) {
+
+}
