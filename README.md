@@ -83,10 +83,11 @@ List of majour libraries used in the template
         - Title format will be `${pageName} | ${appName}` 
         - Refer : [seo-manage.service.ts](./src/app/@core/services/seo-manager.service.ts)
 - Entry Pages
-  - Blank Pages (Under Development)
   - EndPoints
-    - `entry/login` - Login Page
-    - `entry/register` - Registration page
+    - `entry/signin` - Login Page - UI Completed :+1:
+    - `entry/signup` - Registration page - Not yet Started
+  - TODO:
+    - Forgot Password Page
 
 
 ## Contributing
