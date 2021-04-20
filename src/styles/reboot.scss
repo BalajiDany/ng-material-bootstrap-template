@@ -1,0 +1,25 @@
+$enable-smooth-scroll: true !default;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    @if $enable-smooth-scroll {
+        @media (prefers-reduced-motion: no-preference) {
+            scroll-behavior: smooth;
+        }
+    }
+}
+
+body {
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: #000;
+}
+
+[hidden] {
+    display: none !important;
+}
