@@ -50,7 +50,7 @@ export class LocaleManagerService {
     }
 
     private isSupportedLanguage(lang: string | null): boolean {
-        if (!lang) return false;
+        if (!lang) { return false; }
 
         const supportedLanguage: [] = this.getSupportedLanguage();
         return !!supportedLanguage
@@ -74,7 +74,7 @@ export class LocaleManagerService {
     private restoreLanguage(): void {
         const lang = localStorage.getItem(LocaleManagerService.LOCAL_STORAGE_KEY);
         const isSupported = this.isSupportedLanguage(lang);
-        if (isSupported) this.reflectLang(`${lang}`);
+        if (isSupported) { this.reflectLang(`${lang}`); }
     }
 
 }

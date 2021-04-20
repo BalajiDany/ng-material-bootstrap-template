@@ -9,7 +9,7 @@ import { TranslocoService } from '@ngneat/transloco';
 })
 export class PageNotFoundComponent implements OnInit {
 
-    errorCode: string = '404';
+    errorCode = '404';
 
     constructor(
         private translocoService: TranslocoService,

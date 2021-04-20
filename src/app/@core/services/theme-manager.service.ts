@@ -6,7 +6,7 @@ import { filter, map } from 'rxjs/operators';
 const availableThemes = [
     { id: 'default', name: 'Lignt DeepPurple & Amber' },
     { id: 'dark-pink-bluegrey', name: 'Dark Pink & BlueGrey' },
-]
+];
 
 @Injectable({
     providedIn: 'root'
@@ -17,7 +17,7 @@ export class ThemeManagerService {
 
     public static CSS_ATTRIBUTE_KEY = 'data-theme';
 
-    public static URL_PARAM_KEY = 'hreftheme'
+    public static URL_PARAM_KEY = 'hreftheme';
 
     constructor(
         private route: ActivatedRoute,
@@ -35,7 +35,7 @@ export class ThemeManagerService {
         return availableThemes;
     }
 
-    public setActiveTheme(theme: string) {
+    public setActiveTheme(theme: string): void {
         const isSupported = this.isSupportedTheme(theme);
 
         if (!isSupported) {
@@ -48,7 +48,7 @@ export class ThemeManagerService {
     }
 
     private isSupportedTheme(theme: string | null): boolean {
-        if (!theme) return false;
+        if (!theme) { return false; }
 
         return !!availableThemes
             .find(({ id }) => id === theme);
@@ -70,6 +70,6 @@ export class ThemeManagerService {
     private restoreTheme(): void {
         const theme = localStorage.getItem(ThemeManagerService.LOCAL_STORAGE_KEY);
         const isSupported = this.isSupportedTheme(theme);
-        if (isSupported) this.reflectTheme(`${theme}`);
+        if (isSupported) { this.reflectTheme(`${theme}`); }
     }
 }

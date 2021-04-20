@@ -11,7 +11,7 @@ import { EntryComponent } from '../../entry.component';
 export class SigninComponent implements OnInit {
 
 
-    activeLanguage: string = '';
+    activeLanguage = '';
     availabelLanguages: any[];
 
     constructor(
@@ -34,7 +34,7 @@ export class SigninComponent implements OnInit {
         const { label } = this.availabelLanguages
             .find((lang: { id: string; }) => lang.id === activeLangId);
 
-        if (!!label) this.activeLanguage = label;
+        if (!!label) { this.activeLanguage = label; }
     }
 
 }

@@ -7,8 +7,8 @@ import { TranslocoService } from '@ngneat/transloco';
 })
 export class SeoManagerService {
 
-    private appName: string = '';
-    private appDescription: string = '';
+    private appName = '';
+    private appDescription = '';
 
     constructor(
         private meta: Meta,
@@ -29,8 +29,8 @@ export class SeoManagerService {
     }
 
     public setTitle(pageName: string): void {
-        if (!pageName) this.reflectTitle(this.appName);
-        else this.reflectTitle(`${pageName} | ${this.appName}`);
+        if (!pageName) { this.reflectTitle(this.appName); }
+        else { this.reflectTitle(`${pageName} | ${this.appName}`); }
     }
 
     public setDescription(content: string): void {

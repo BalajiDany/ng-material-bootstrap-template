@@ -6,7 +6,7 @@ import { TranslocoHttpLoaderService } from './transloco-http-loader.service';
 const availableLangs = [
     { id: 'en', label: 'English' },
     { id: 'es', label: 'Español' },
-]
+];
 
 @NgModule({
     exports: [

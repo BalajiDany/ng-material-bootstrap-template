@@ -9,7 +9,7 @@ import { TranslocoService } from '@ngneat/transloco';
 })
 export class ServerDownComponent implements OnInit {
 
-    errorCode: string = '503';
+    errorCode = '503';
 
     constructor(
         private translocoService: TranslocoService,

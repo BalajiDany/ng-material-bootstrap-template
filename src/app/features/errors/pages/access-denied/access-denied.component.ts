@@ -9,7 +9,7 @@ import { TranslocoService } from '@ngneat/transloco';
 })
 export class AccessDeniedComponent implements OnInit {
 
-    errorCode: string = '403';
+    errorCode = '403';
 
     constructor(
         private translocoService: TranslocoService,
