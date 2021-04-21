@@ -1,5 +1,6 @@
-# Ng Material Bootstrap Template
+# Ng Material Bootstrap Template [link](https://ngtemplate-balaji.netlify.app/entry/signin)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7152142d-f7ae-4f48-afa5-334086a777a0/deploy-status)](https://app.netlify.com/sites/ngtemplate-balaji/deploys)
 [![GitHub contributors](https://img.shields.io/github/contributors/BalajiDany/ng-material-bootstrap-template.svg)](https://github.com/BalajiDany/ng-material-bootstrap-template/graphs/contributors)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/BalajiDany/ng-material-bootstrap-template/blob/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/BalajiDany/ng-material-bootstrap-template.svg)](https://github.com/BalajiDany/ng-material-bootstrap-template/issues)
@@ -24,12 +25,12 @@ In the conflict of bootstrap VS material, we understand that both have several i
 
 **This Starter Template is inspired By Amadou Sall @ NG-DE 2019**<br>
 For more refer : 
-[Slide Deck](https://speakerdeck.com/ahasall/angular-material-or-bootstrap-stop-asking-the-question-at-ng-de-2019) | [youtube](https://www.youtube.com/watch?v=6MgOHuxz2Ow)
+[Slide Deck](https://speakerdeck.com/ahasall/angular-material-or-bootstrap-stop-asking-the-question-at-ng-de-2019) | [Youtube](https://www.youtube.com/watch?v=6MgOHuxz2Ow)
 
 
 ## Build With
 
-List of majour libraries used in the template
+List of major libraries used in the template
 
 - [Angular](https://angular.io)
 - [Angular Material UI Components and CDK](https://material.angular.io)
@@ -41,13 +42,27 @@ List of majour libraries used in the template
 - [Angular Material Icon](https://fonts.google.com/icons)
 
 
+## Feature Links:
+Link for the template [here](https://ngtemplate-balaji.netlify.app) <br>
+Since the home page is not developed it will display page not found error.
+
+* Entry Page 
+  - [Login Page](https://ngtemplate-balaji.netlify.app/entry/signin)
+  - [Register Page](https://ngtemplate-balaji.netlify.app/entry/signup)
+* Error Page 
+  - [Page Not Found](https://ngtemplate-balaji.netlify.app/error/404)
+  - [Access Denied](https://ngtemplate-balaji.netlify.app/error/403)
+  - [Server Error](https://ngtemplate-balaji.netlify.app/error/500)
+  - [Server Down](https://ngtemplate-balaji.netlify.app/error/503)
+
+
 ## Current Features
 
 - Production Build
   - Build Optimizer : `npm run pack`
   - Source Map Explorer : `npm run analyze`
   - Refer : [package.json](package.json)
-- Diffrential Loading
+- Differential Loading
   - Refer : [Differential builds](https://angular.io/guide/deployment#differential-loading)
 - Internationalization
   - [Transloco](https://ngneat.github.io/transloco/) - (i18n) library for Angular
