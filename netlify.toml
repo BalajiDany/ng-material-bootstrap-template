@@ -1,0 +1,7 @@
+[build]
+  publish = "dist/prod"
+  command = "npm run pack"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
