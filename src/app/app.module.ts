@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TranslocoRootModule } from './@core/transloco/transloco-root.module';
+import { LoadingScreenModule } from './@shared/components/loading-screen/loading-screen.module';
 
 @NgModule({
     declarations: [
@@ -17,6 +18,7 @@ import { TranslocoRootModule } from './@core/transloco/transloco-root.module';
         BrowserAnimationsModule,
         HttpClientModule,
         TranslocoRootModule,
+        LoadingScreenModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
