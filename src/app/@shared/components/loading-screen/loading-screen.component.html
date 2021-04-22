@@ -1,6 +1,6 @@
 <div [ngClass]="isLoading ? 'visible' : 'invisible'" class="mat-app-background position-absolute w-100 h-100 z-1000">
     <mat-progress-bar class="position-fixed" mode="indeterminate"></mat-progress-bar>
 </div>
-<div [ngClass]="{ 'invisible overflow-hidden' : isLoading }">
+<div [ngClass]="{ 'invisible overflow-hidden' : isLoading }" class="h-100">
     <ng-content></ng-content>
 </div>

@@ -37,8 +37,9 @@ export class SeoManagerService {
         this.reflectDescrition(content);
     }
 
-    private reflectTitle(page: string): void {
-        this.title.setTitle(page);
+    private reflectTitle(pageTitle: string): void {
+        this.title.setTitle(''); // To Reset the title to force chrome to detect chenge.
+        this.title.setTitle(pageTitle);
     }
 
     private reflectDescrition(content: string): void {

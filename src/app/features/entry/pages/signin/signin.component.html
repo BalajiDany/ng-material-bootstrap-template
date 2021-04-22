@@ -1,5 +1,5 @@
 <ng-container *transloco="let t;">
-    <div class="py-md-12 px-md-8 d-flex align-items-start alignalign-items-md-center justify-content-center"
+    <div class="py-md-6 px-md-8 d-flex align-items-start alignalign-items-md-center justify-content-center"
         style="min-height: 100%;">
         <div class="container mat-elevation-z6 m-md-auto" style="max-width: 786px;">
             <div class="row">
@@ -50,7 +50,6 @@
 
         </div>
 
-        <!-- <div class="pb-8"></div> -->
         <mat-form-field appearance="outline" class="w-100">
             <mat-label>{{ t('entry.emailAddressLabel') }}</mat-label>
             <input aria-label="TODO" aria-required="true" type="email" matInput
@@ -63,11 +62,11 @@
             <mat-icon matSuffix>lock_outline</mat-icon>
         </mat-form-field>
 
-        <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center justify-content-between mb-4">
             <a mat-button color="primary" aria-label="TODO" class="px-2 mx-n2" routerLink="../resetpassword">
                 {{ t('entry.forgotPasswordLabel') }}
             </a>
-            <button mat-raised-button aria-label="TODO" color="primary" class="float-end py-1 mb-4">
+            <button mat-raised-button aria-label="TODO" color="primary" class="float-end">
                 {{ t('entry.signInLabel') | uppercase}}
             </button>
         </div>
