@@ -29,6 +29,7 @@ $enable-negative-margins: true !default;
 $utilities: map-get-multiple(
     $utilities,
     (
+        "visibility",
         "display",
         "order",
         "flex",
