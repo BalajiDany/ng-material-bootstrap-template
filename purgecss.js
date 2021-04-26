@@ -3,6 +3,12 @@ const fs = require('fs');
 const path = require('path');
 
 const purgePath = './dist/prod';
+const safeList = [
+    'mat-primary',
+    'mat-accent',
+    'mat-error',
+    'mat-warn',
+];
 
 // find the styles css file
 const files = getCssFiles(purgePath);
@@ -22,7 +28,7 @@ for (let file of files) {
 
 console.log('Run PurgeCSS...');
 
-exec(`purgecss -css ${purgePath}/*.css --content ${purgePath}/index.html ${purgePath}/*.js -o ${purgePath}/`, function () {
+exec(`purgecss -css ${purgePath}/*.css --content ${purgePath}/index.html ${purgePath}/*.js --safelist ${safeList.join(' ')} -o ${purgePath}/`, function () {
     for (let file of data) {
         // get new file size
         const newSize = getFilesizeInKiloBytes(`${purgePath}/` + file.file) + ' KB';
