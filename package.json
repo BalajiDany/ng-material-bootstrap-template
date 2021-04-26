@@ -11,7 +11,8 @@
         "_report-es2015": "npx source-map-explorer dist/stage/main-es2015.*.js",
         "_report-es5": "npx source-map-explorer dist/stage/main-es5.*.js",
         "pack": "ng build --prod --buildOptimizer=true",
-        "analyze": "npm run pack -- --sourceMap=true --outputPath=./dist/stage && npm run _report-es2015"
+        "analyze": "npm run pack -- --sourceMap=true --outputPath=./dist/stage && npm run _report-es2015",
+        "postpack": "node purgecss.js"
     },
     "private": true,
     "dependencies": {
@@ -46,6 +47,7 @@
         "karma-jasmine": "~4.0.0",
         "karma-jasmine-html-reporter": "^1.5.0",
         "protractor": "~7.0.0",
+        "purgecss": "^4.0.3",
         "ts-node": "~8.3.0",
         "tslint": "~6.1.0",
         "typescript": "~4.1.5"

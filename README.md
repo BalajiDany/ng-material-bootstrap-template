@@ -40,6 +40,7 @@ List of major libraries used in the template
 - [Transloco](https://ngneat.github.io/transloco/)
 - [unDraw](https://undraw.co)
 - [Angular Material Icon](https://fonts.google.com/icons)
+- [PurgeCSS](https://purgecss.com/)
 
 
 ## Feature Links:
@@ -128,5 +129,6 @@ Apache-2.0 License - Please have a look at the [LICENSE](LICENSE) for more detai
 * [GitHub Pages](https://pages.github.com)
 * [Filtrate](https://file-translate.com/en/app/json-translate)
 * [unDraw](https://undraw.co)
+* [Reduce Angular style size By Dylan v.d Merwe](https://dev.to/dylanvdmerwe/reduce-angular-style-size-using-purgecss-to-remove-unused-styles-3b2k)
 
 [Back To Top](#ng-material-bootstrap-template)
