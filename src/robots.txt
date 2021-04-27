@@ -1,0 +1,5 @@
+# Allow all Crawlers
+User-agent: *
+Allow: /
+
+Sitemap: /sitemap.xml
