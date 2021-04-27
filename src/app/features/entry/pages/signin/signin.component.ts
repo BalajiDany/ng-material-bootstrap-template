@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { TranslocoService } from '@ngneat/transloco';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 import { LocaleManagerService } from 'src/app/@core/services/locale-manager.service';
 import { SeoManagerService } from 'src/app/@core/services/seo-manager.service';
 
@@ -8,11 +10,12 @@ import { SeoManagerService } from 'src/app/@core/services/seo-manager.service';
     templateUrl: './signin.component.html',
     styleUrls: ['./signin.component.scss']
 })
-export class SigninComponent implements OnInit {
-
+export class SigninComponent implements OnInit, OnDestroy {
 
     activeLanguage = '';
     availabelLanguages: any[];
+
+    private isAlive: Subject<void> = new Subject();
 
     constructor(
         private localeManager: LocaleManagerService,
@@ -27,6 +30,11 @@ export class SigninComponent implements OnInit {
     ngOnInit(): void {
     }
 
+    ngOnDestroy(): void {
+        this.isAlive.next();
+        this.isAlive.complete();
+    }
+
     changeLanguage(langId: string): void {
         this.localeManager.setActiveLanguage(langId);
         this.setActiveLang();
@@ -34,6 +42,7 @@ export class SigninComponent implements OnInit {
 
     private setPageTitle(): void {
         this.translocoService.selectTranslate('signInLabel', {}, { scope: 'entry' })
+            .pipe(takeUntil(this.isAlive))
             .subscribe(pageTitle => this.seoManagerService.setTitle(pageTitle));
     }
 
