@@ -12,7 +12,7 @@ export class LoadingScreenComponent implements OnInit, AfterViewInit {
     // So Added some wait time, if content loading time exceed wait time
     // then loading page will removed abruptly.
     // In Milli Second
-    private static WAIT_TIME = 800;
+    private static WAIT_TIME = 500;
 
     private timeStamp = 0;
     private catchUpTimer: any;
