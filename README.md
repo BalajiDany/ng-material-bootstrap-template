@@ -104,7 +104,10 @@ Since the home page is not developed it will display page not found error.
     - `entry/signup` - Registration page - Not yet Started
   - TODO:
     - Forgot Password Page
-
+- Guards
+  - [AuthGuard](./src/app/@core/guards/auth.guard.ts) -------- Is Authenticated
+  - [NoAuthGuard](./src/app/@core/guards/no-auth.guard.ts) ----- Not Authenticated
+  - [RoleGuard](./src/app/@core/guards/role.guard.ts) -------- Is Authenticated + Has Authority
 
 ## Contributing
 
