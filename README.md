@@ -98,6 +98,11 @@ Since the home page is not developed it will display page not found error.
     - Initialy it uses `appName` and `appDescription` from `assets/i18n/*.json` as **title** and **description**
         - Title format will be `${pageName} | ${appName}` 
         - Refer : [seo-manage.service.ts](./src/app/@core/services/seo-manager.service.ts)
+  - [Navigation Manager](./src/app/@core/services/navigation-manager.service.ts)
+    - Allows us to navigate browser back and forward.
+    - When we open the page directly, then there will be no history(browser back or forward)
+    <br> in that case fallback/alternate URL will fires 
+    - Default `alternatePath` is `"/"`
 - Entry Pages
   - EndPoints
     - `entry/signin` - Login Page - UI Completed :+1:
