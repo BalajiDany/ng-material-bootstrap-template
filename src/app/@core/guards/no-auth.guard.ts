@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CanActivate, CanLoad, Route, UrlSegment, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, Router } from '@angular/router';
+import { CanActivate, CanLoad, Route, UrlSegment, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { AuthManagerService } from '../services/auth-manager.service';
@@ -11,7 +11,6 @@ export class NoAuthGuard implements CanActivate, CanLoad {
 
     constructor(
         private authManagerService: AuthManagerService,
-        private router: Router,
     ) { }
 
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot)
