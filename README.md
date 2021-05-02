@@ -105,9 +105,10 @@ Since the home page is not developed it will display page not found error.
   - TODO:
     - Forgot Password Page
 - Guards
-  - [AuthGuard](./src/app/@core/guards/auth.guard.ts) -------- Is Authenticated
-  - [NoAuthGuard](./src/app/@core/guards/no-auth.guard.ts) ----- Not Authenticated
-  - [RoleGuard](./src/app/@core/guards/role.guard.ts) -------- Is Authenticated + Has Authority
+  - [AuthGuard](./src/app/@core/guards/auth.guard.ts) - Is Authenticated
+  - [NoAuthGuard](./src/app/@core/guards/no-auth.guard.ts) - Not Authenticated
+  - [RoleGuard](./src/app/@core/guards/role.guard.ts) - Is Authenticated + Has Authority
+  - [DevGuard](./src/app/@core/guards/dev.guard.ts) - Is Dev Mode
 
 ## Contributing
 
