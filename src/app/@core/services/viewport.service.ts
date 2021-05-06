@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 export enum BREAKPOINT {
+    XS = '(min-width: 0)',
     SM = '(min-width: 576px)',
     MD = '(min-width: 768px)',
     LG = '(min-width: 992px)',

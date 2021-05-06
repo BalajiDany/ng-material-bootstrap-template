@@ -106,7 +106,7 @@ Since the home page is not developed it will display page not found error.
   - [Viewport](./src/app/@core/services/viewport.service.ts)
     - Allows us to listen for viewport width change.
     - Based on Bootstrap breakpoint. For reference [Available Breakpoints in Bootstrap](https://getbootstrap.com/docs/5.0/layout/breakpoints/#available-breakpoints)
-    - Use `enum BREAKPOINT`
+    - Use `enum BREAKPOINT` for refrencing
 - Entry Pages
   - EndPoints
     - `entry/signin` - Login Page - UI Completed :+1:
