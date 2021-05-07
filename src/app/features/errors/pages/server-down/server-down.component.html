@@ -1,7 +1,7 @@
 <ng-container *transloco="let t;">
 
     <svg id="cbb27dff-01cf-4d21-b827-02c6f7b52fd7" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="1020"
-        class="p-8 w-100 h-100 error-illustration" style="max-height: 380px; margin-top: 10vh;" height="668.18"
+        class="p-8 w-100 h-100 error-illustration" style="max-height: 380px; margin-top: 2vh;" height="668.18"
         viewBox="0 0 1020 668.18">
         <title>{{ t('errors.serverDown.errorMessage') }}</title>
         <path
@@ -229,7 +229,14 @@
             transform="translate(-90 -115.91)" fill="inherit" />
     </svg>
 
-    <p class="mat-body-1 mb-1">{{ t('errors.errorCodeLabel', { errorCode: errorCode }) }}</p>
+    <p class="mat-body-1 mb-0">{{ t('errors.errorCodeLabel', { errorCode: errorCode }) }}</p>
     <h1 class="mat-headline mb-2">{{ t('errors.serverDown.errorMessage') }}</h1>
-    <p class="mat-body-1">{{ t('errors.serverDown.errorDescription') }}</p>
+    <p class="mat-body-1 mt-0 mb-6">{{ t('errors.serverDown.errorDescription') }}</p>
+
+    <div>
+        <a mat-raised-button color="primary" class="mx-auto" routerLink="/">
+            {{ t('errors.goToHomePage') }}
+        </a>
+    </div>
+
 </ng-container>

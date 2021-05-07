@@ -1,6 +1,10 @@
 {
     "errorCodeLabel": "Código de error: {{errorCode}}",
     "errorPageTitle": "Error : {{errorCode}}",
+    "goToHomePage": "Ir a la página de inicio",
+    "contactAdmin": "Contactar con el administrador",
+    "backToPreviousPage": "Volver a la página anterior",
+    "or": "o",
     "accessDenied": {
         "errorMessage": "Acceso denegado.",
         "errorDescription": "No tiene permiso, comuníquese con el administrador"

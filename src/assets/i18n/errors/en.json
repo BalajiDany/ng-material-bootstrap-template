@@ -1,6 +1,10 @@
 {
     "errorCodeLabel": "Error Code: {{errorCode}}",
     "errorPageTitle": "Error : {{errorCode}}",
+    "goToHomePage": "Go to Home Page",
+    "contactAdmin": "Contact Admin",
+    "backToPreviousPage": "Back to Previous Page",
+    "or": "or",
     "accessDenied": {
         "errorMessage": "Access Denied.",
         "errorDescription": "You don't have permission, Please contact Admin."

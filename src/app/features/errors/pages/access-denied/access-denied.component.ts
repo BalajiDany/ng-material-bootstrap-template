@@ -3,6 +3,7 @@ import { SeoManagerService } from 'src/app/@core/services/seo-manager.service';
 import { TranslocoService } from '@ngneat/transloco';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { NavigationManagerService } from 'src/app/@core/services/navigation-manager.service';
 
 @Component({
     selector: 'app-access-denied',
@@ -18,6 +19,7 @@ export class AccessDeniedComponent implements OnInit, OnDestroy {
     constructor(
         private translocoService: TranslocoService,
         private seoManagerService: SeoManagerService,
+        private navigationManagerService: NavigationManagerService,
     ) {
         this.setPageTitle();
     }
@@ -28,6 +30,10 @@ export class AccessDeniedComponent implements OnInit, OnDestroy {
     ngOnDestroy(): void {
         this.isAlive.next();
         this.isAlive.complete();
+    }
+
+    backToPreviousPage() {
+        this.navigationManagerService.back();
     }
 
     private setPageTitle(): void {

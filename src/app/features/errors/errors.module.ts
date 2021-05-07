@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TRANSLOCO_SCOPE, TranslocoModule } from '@ngneat/transloco';
+import { MatButtonModule } from '@angular/material/button';
 
 import { ErrorsComponent } from './errors.component';
 import { ErrorsRoutingModule } from './errors-routing.module';
@@ -19,6 +20,7 @@ import { ServerErrorComponent } from './pages/server-error/server-error.componen
     ],
     imports: [
         CommonModule,
+        MatButtonModule,
         TranslocoModule,
         ErrorsRoutingModule
     ],

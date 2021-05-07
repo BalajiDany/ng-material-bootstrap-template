@@ -1,7 +1,7 @@
 <ng-container *transloco="let t;">
 
     <svg id="ad467010-4b2c-4db1-84f0-cd2022f75deb" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-        class="p-8 w-100 h-100 error-illustration" style="max-height: 380px; margin-top: 10vh;" width="1072.34"
+        class="p-8 w-100 h-100 error-illustration" style="max-height: 380px; margin-top: 2vh;" width="1072.34"
         height="780.14" viewBox="0 0 1072.34 780.14">
         <title>{{ t('errors.accessDenied.errorMessage') }}</title>
         <path
@@ -242,7 +242,20 @@
             transform="translate(-63.83 -59.93)" fill="inherit" opacity="0.1" />
     </svg>
 
-    <p class="mat-body-1 mb-1">{{ t('errors.errorCodeLabel', { errorCode: errorCode }) }}</p>
+    <p class="mat-body-1 mb-0">{{ t('errors.errorCodeLabel', { errorCode: errorCode }) }}</p>
     <h1 class="mat-headline mb-2">{{ t('errors.accessDenied.errorMessage') }}</h1>
-    <p class="mat-body-1">{{ t('errors.accessDenied.errorDescription') }}</p>
+    <p class="mat-body-1 mt-0 mb-6">{{ t('errors.accessDenied.errorDescription') }}</p>
+
+    <div>
+        <a mat-raised-button color="primary" class="mx-auto" (click)="backToPreviousPage()">
+            {{ t('errors.backToPreviousPage') }}
+        </a>
+        <span class="d-block d-sm-inline mat-body-2 mx-4 my-1">
+            {{ t('errors.or') }}
+        </span>
+        <button mat-raised-button class="mx-auto">
+            {{ t('errors.contactAdmin') }}
+        </button>
+    </div>
+
 </ng-container>

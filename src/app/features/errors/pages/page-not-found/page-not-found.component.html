@@ -1,7 +1,7 @@
 <ng-container *transloco="let t;">
 
     <svg id="9af98f83-10c5-4067-bc84-20554b2827d8" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-        class="p-8 w-100 h-100 error-illustration" style="max-height: 380px; margin-top: 10vh;"
+        class="p-8 w-100 h-100 error-illustration" style="max-height: 380px; margin-top: 2vh;"
         xmlns:xlink="http://www.w3.org/1999/xlink" width="1009.54" height="789.93" viewBox="0 0 1009.54 789.93">
         <defs>
             <linearGradient id="07c62293-c0d3-4921-8e06-4e39241449cd" x1="318.22" y1="488.45" x2="630.35" y2="488.45"
@@ -244,7 +244,14 @@
             transform="translate(-95.23 -55.03)" opacity="0.2" />
     </svg>
 
-    <p class="mat-body-1 mb-1">{{ t('errors.errorCodeLabel', { errorCode: errorCode }) }}</p>
+    <p class="mat-body-1 mb-0">{{ t('errors.errorCodeLabel', { errorCode: errorCode }) }}</p>
     <h1 class="mat-headline mb-2">{{ t('errors.pageNotFound.errorMessage') }}</h1>
-    <p class="mat-body-1">{{ t('errors.pageNotFound.errorDescription') }}</p>
+    <p class="mat-body-1 mt-0 mb-6">{{ t('errors.pageNotFound.errorDescription') }}</p>
+
+    <div>
+        <a mat-raised-button color="primary" class="mx-auto" routerLink="/">
+            {{ t('errors.goToHomePage') }}
+        </a>
+    </div>
+
 </ng-container>
