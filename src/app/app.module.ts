@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { LayoutModule } from '@angular/cdk/layout';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,10 +14,14 @@ import { LoadingScreenModule } from './@shared/components/loading-screen/loading
         AppComponent
     ],
     imports: [
+        // Base Modules
         BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
+        LayoutModule,
         HttpClientModule,
+        BrowserAnimationsModule,
+
+        // App Specific Modules
+        AppRoutingModule,
         TranslocoRootModule,
         LoadingScreenModule,
     ],

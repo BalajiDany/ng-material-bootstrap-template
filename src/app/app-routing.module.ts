@@ -11,6 +11,11 @@ const routes: Routes = [
         redirectTo: 'entry/signin',
     },
     {
+        path: 'docs',
+        loadChildren: () => import('./features/docs/docs.module')
+            .then(module => module.DocsModule),
+    },
+    {
         path: 'entry',
         loadChildren: () => import('./features/entry/entry.module')
             .then(module => module.EntryModule),
